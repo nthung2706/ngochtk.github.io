@@ -14,16 +14,31 @@ body{
 }
 .about-left{
     background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+	background: linear-gradient(-45deg, #ff0000, #ff1b17, #ff2a26, #ff3633, #ff413f, #ff413f, #ff413f, #ff413f, #ff3633, #ff2a26, #ff1b17, #ff0000);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;    
+    
     display: flex;
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     color:#fff
 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .about-left-content > div{
-    background: #12192c;
+    background: #ffffff38;
     padding: 4rem 4rem 2.5rem 5rem;
     text-align: center;
     
@@ -62,7 +77,7 @@ body{
     margin: 2.2rem 0 0.6rem 0;
     line-height: 1.2;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #B721FF;
+    border-bottom: 2px solid #FF0000;
 }
 .about-left-content h3{
     text-transform: uppercase;
@@ -71,7 +86,7 @@ body{
     margin-top: 1.2rem;
 }
 .icons{
-    background: #12192c;
+    background: #ffffff38;
     display: flex;
     justify-content: center;
     padding: 0.8rem 0;
@@ -79,7 +94,7 @@ body{
 }
 .icons li{
     list-style-type: none;
-    background: #B721FF;
+    background: #FF0000;
     color: #fff;
     width: 40px;
     height: 40px;
@@ -112,7 +127,7 @@ body{
     text-transform: uppercase;
 }
 .about-right h1 span{
-    color: #B721FF;
+    color: #FF0000;
 }
 .about-right h2{
     font-weight: 600;
@@ -136,9 +151,9 @@ body{
     color:#fff
 }
 .btn.btn-pink{
-    background: #B721FF;
+    background: #FF0000;
     color: #fff;
-    border-color: #B721FF;
+    border-color: #FF0000;
     transition: all 0.5s ease-in-out;
 }
 .btn.btn-pink:hover{
@@ -150,8 +165,8 @@ body{
     transition: all 0.5s ease-in-out;
 }
 .btn.btn-white:hover{
-    background: #B721FF;
-    border-color: #B721FF;
+    background: #FF0000;
+    border-color: #FF0000;
     color: #fff;
 }
 .about-para p{
@@ -182,7 +197,7 @@ body{
 }
 .credit a{
     text-decoration: none;
-    color:#B721FF;
+    color:#FF0000;
     font-weight: bold;
 } 
 
